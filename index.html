@@ -465,60 +465,6 @@
     <!-- End block -->
 
     <!-- Start block -->
-    <section class="bg-gray-800 dark:bg-gray-800">
-        <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-24 lg:px-6">
-            <h2 style="margin-bottom: 58px;" class="mb-4 text-3xl font-extrabold tracking-tight text-white dark:text-white">Kết quả đầu tư gần đây</h2>
-
-            <div class="flex flex-wrap justify-between">
-                <div>
-                    <img class="img-order" src="./images/orders/1.jpg">
-                </div>
-                <div>
-                    <img class="img-order" src="./images/orders/2.jpg">
-                </div>
-                <div>
-                    <img class="img-order" src="./images/orders/3.jpg">
-                </div>
-                <div>
-                    <img class="img-order" src="./images/orders/4.jpg">
-                </div>
-                <div>
-                    <img class="img-order" src="./images/orders/5.jpg">
-                </div>
-                <div>
-                    <img class="img-order" src="./images/orders/6.jpg">
-                </div>
-                <div>
-                    <img class="img-order" src="./images/orders/7.jpg">
-                </div>
-                <div>
-                    <img class="img-order" src="./images/orders/8.jpg">
-                </div>
-                <div>
-                    <img class="img-order" src="./images/orders/9.jpg">
-                </div>
-                <div>
-                    <img class="img-order" src="./images/orders/10.jpg">
-                </div>
-                <div>
-                    <img class="img-order" src="./images/orders/11.jpg">
-                </div>
-                <div>
-                    <img class="img-order" src="./images/orders/12.jpg">
-                </div>
-                <div>
-                    <img class="img-order" src="./images/orders/13.jpg">
-                </div>
-                <div>
-                    <img class="img-order" src="./images/orders/14.jpg">
-                </div>
-            </div>
-
-        </div>
-      </section>
-    <!-- End block -->
-
-    <!-- Start block -->
     <section class="bg-gray-50 dark:bg-gray-800">
         <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-24 lg:px-6">
             <figure class="max-w-screen-md mx-auto">
@@ -898,6 +844,40 @@
             </div>
         </div>
     </footer>
+
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "111065974823032");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v2.11'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- Messenger Chat Plugin Code -->
+
+
     <!-- <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script> -->
     <script src="./flowbite.js"></script>
 </body>
